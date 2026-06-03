@@ -1,7 +1,7 @@
 # 🐾 PetApp2 – AIペットアプリシリーズ
 
 <div align="center">
-  <img src="assets/ui/hero.png" width="700">
+  <img src="/PetApp2/assets/ui/hero.png" width="700">
 </div>
 
 ---
