@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 # 🐾 PetApp2 – AIペットアプリシリーズ
 
 <div align="center">
