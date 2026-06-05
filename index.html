@@ -2,59 +2,153 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetApp2 – AIペットアプリシリーズ</title>
+
   <style>
-    body { font-family: "Segoe UI", sans-serif; margin: 40px; }
-    h1 { text-align: center; }
-    img.hero { display: block; margin: 0 auto; width: 700px; }
-    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background-color: #f0f0f0; }
+    body {
+      font-family: "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7;
+      margin: 40px auto;
+      max-width: 900px;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      color: #003366;
+    }
+
+    img.hero {
+      display: block;
+      margin: 20px auto;
+      width: 700px;
+      max-width: 100%;
+      border-radius: 20px;
+      border: 4px solid #cc33cc;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* ← 影を追加 */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f8ff;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>🐾 PetApp2 – AIペットアプリシリーズ</h1>
-<img src="hero.png" alt="Hero image" class="hero">
+  <h1>🐾 PetApp2 – AIペットアプリシリーズ</h1>
 
-<h2>🟦 はじめに</h2>
-<p>
-あなたの呼びかけ声や笑顔に反応するペットアプリ。<br>
-USBやSDカードにあなたの愛したペットの心が宿り、<br>
-それを挿しただけで休眠パソコンが癒しのAIペットロボットに変わります。
-</p>
+  <img src="hero.png" alt="PetApp2 hero image" class="hero">
 
-<h2>🟩 エディション一覧</h2>
-<table>
-  <tr><th>エディション名</th><th>種類</th><th>内容</th><th>ダウンロード</th></tr>
-  <tr><td>PetApp2-portable</td><td>テンプレート版</td><td>ユーザー自身のペットを登録して使用できます。</td>
-      <td><a href="https://github.com/usakowhity/PetApp2-portable/releases/latest">Download</a></td></tr>
-  <tr><td>PetApp2_shelly</td><td>犬デモ版</td><td>シェルティ犬「Shelly」のデモ。</td>
-      <td><a href="https://github.com/usakowhity/PetApp2_shelly/releases/latest">Download</a></td></tr>
-  <tr><td>PetApp2_mimi</td><td>猫デモ版</td><td>シャム猫「Mimi」のデモ。</td>
-      <td><a href="https://github.com/usakowhity/PetApp2_mimi/releases/latest">Download</a></td></tr>
-  <tr><td>PetApp2-peter</td><td>うさぎデモ版</td><td>ネザーランドドワーフ「Peter」のデモ。</td>
-      <td><a href="https://github.com/usakowhity/PetApp2-peter/releases/latest">Download</a></td></tr>
-</table>
+  <section id="intro">
+    <h2>はじめに</h2>
+    <p>
+      PetApp2シリーズは、AIがあなたの声や笑顔を認識し、  
+      ペットが生きているように反応するデスクトップアプリです。<br>
+      犬・猫・うさぎなどのペットを登録し、表情や動作を再現して楽しむことができます。<br>
+      Portable版はインストール不要で、ZIPを展開するだけですぐに利用できます。
+    </p>
+  </section>
 
-<h2>🟦 使い方（共通）</h2>
-<ol>
-  <li>ZIP を展開</li>
-  <li>run.bat を実行</li>
-  <li>ペットプロフィールを編集</li>
-  <li>外部AIツールで画像・動画を生成</li>
-  <li>generated/ フォルダに配置</li>
-  <li>Play モードで再生</li>
-</ol>
+  <section id="editions">
+    <h2>エディション一覧</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>エディション名</th>
+          <th>種類</th>
+          <th>内容</th>
+          <th>ダウンロード</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PetApp2-portable</strong></td>
+          <td>テンプレート版</td>
+          <td>ユーザー自身のペットを登録して使用できます。</td>
+          <td><a href="https://github.com/usakowhity/PetApp2-portable/releases/latest">Download</a></td>
+        </tr>
+        <tr>
+          <td><strong>PetApp2_shelly</strong></td>
+          <td>犬デモ版</td>
+          <td>シェルティ犬「Shelly」のデモ。</td>
+          <td><a href="https://github.com/usakowhity/PetApp2_shelly/releases/latest">Download</a></td>
+        </tr>
+        <tr>
+          <td><strong>PetApp2_mimi</strong></td>
+          <td>猫デモ版</td>
+          <td>シャム猫「Mimi」のデモ。</td>
+          <td><a href="https://github.com/usakowhity/PetApp2_mimi/releases/latest">Download</a></td>
+        </tr>
+        <tr>
+          <td><strong>PetApp2-peter</strong></td>
+          <td>うさぎデモ版</td>
+          <td>ネザーランドドワーフ「Peter」のデモ。</td>
+          <td><a href="https://github.com/usakowhity/PetApp2-peter/releases/latest">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-<h2>🟩 特徴</h2>
-<ul>
-  <li>インストール不要（Portable）</li>
-  <li>Python Embedded + ffmpeg 同梱</li>
-  <li>Windows 10/11 対応</li>
-  <li>ペットプロフィールからプロンプト自動生成</li>
-  <li>外部AIツールとの連携を支援</li>
-</ul>
+  <section id="features">
+    <h2>主な機能</h2>
+    <ul>
+      <li>ペット画像・動画を登録して動作を再現</li>
+      <li>14種類の状態（n1〜p12）に対応</li>
+      <li>笑顔（顔認識）と声掛け（音声認識）で状態が切り替わる</li>
+      <li>プロフィール編集（種別・名前・毛色など）</li>
+      <li>AI画像/動画生成ガイド（Gemini / Copilot / Pika）</li>
+      <li>プロンプト自動生成機能（和文／英文）</li>
+      <li>インストール不要の Portable 版</li>
+      <li>Windows 10/11 対応</li>
+      <li>MIT ライセンス</li>
+    </ul>
+  </section>
+
+  <section id="download">
+    <h2>ダウンロード</h2>
+    <p>
+      最新バージョンは GitHub Releases から入手できます。<br>
+      👉 <a href="https://github.com/usakowhity/PetApp2-portable/releases/latest">https://github.com/usakowhity/PetApp2-portable/releases/latest</a>
+    </p>
+  </section>
+
+  <section id="environment">
+    <h2>動作環境</h2>
+    <ul>
+      <li>Windows 10 / Windows 11</li>
+      <li>GPU不要</li>
+    </ul>
+  </section>
+
+  <section id="license">
+    <h2>ライセンス</h2>
+    <p>
+      MIT License<br>
+      Copyright (c) usakowhity
+    </p>
+  </section>
 
 </body>
 </html>
