@@ -12,26 +12,35 @@
       margin: 40px auto;
       max-width: 900px;
       color: #222;
+      background-color: #f7fbff; /* ← 淡いブルー背景 */
     }
 
     h1, h2, h3 {
       color: #003366;
     }
 
+    /* hero.png：影なし＋柔らかい枠線色 */
     img.hero {
       display: block;
       margin: 20px auto;
       width: 700px;
       max-width: 100%;
       border-radius: 20px;
-      border: 4px solid #cc33cc;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* ← 影を追加 */
+      border: 4px solid #d8a8e8; /* ← 柔らかいラベンダー色 */
+    }
+
+    /* テーブルの横スクロール対応 */
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 20px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      min-width: 600px; /* スマホで横スクロール可能に */
+      background-color: white;
     }
 
     th, td {
@@ -41,7 +50,7 @@
     }
 
     th {
-      background-color: #f0f8ff;
+      background-color: #e8f4ff; /* 淡いブルー */
     }
 
     a {
@@ -73,42 +82,46 @@
 
   <section id="editions">
     <h2>エディション一覧</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>エディション名</th>
-          <th>種類</th>
-          <th>内容</th>
-          <th>ダウンロード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>PetApp2-portable</strong></td>
-          <td>テンプレート版</td>
-          <td>ユーザー自身のペットを登録して使用できます。</td>
-          <td><a href="https://github.com/usakowhity/PetApp2-portable/releases/latest">Download</a></td>
-        </tr>
-        <tr>
-          <td><strong>PetApp2_shelly</strong></td>
-          <td>犬デモ版</td>
-          <td>シェルティ犬「Shelly」のデモ。</td>
-          <td><a href="https://github.com/usakowhity/PetApp2_shelly/releases/latest">Download</a></td>
-        </tr>
-        <tr>
-          <td><strong>PetApp2_mimi</strong></td>
-          <td>猫デモ版</td>
-          <td>シャム猫「Mimi」のデモ。</td>
-          <td><a href="https://github.com/usakowhity/PetApp2_mimi/releases/latest">Download</a></td>
-        </tr>
-        <tr>
-          <td><strong>PetApp2-peter</strong></td>
-          <td>うさぎデモ版</td>
-          <td>ネザーランドドワーフ「Peter」のデモ。</td>
-          <td><a href="https://github.com/usakowhity/PetApp2-peter/releases/latest">Download</a></td>
-        </tr>
-      </tbody>
-    </table>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>エディション名</th>
+            <th>種類</th>
+            <th>内容</th>
+            <th>ダウンロード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🐾 <strong>PetApp2-portable</strong></td>
+            <td>テンプレート版</td>
+            <td>ユーザー自身のペットを登録して使用できます。</td>
+            <td><a href="https://github.com/usakowhity/PetApp2-portable/releases/latest">Download</a></td>
+          </tr>
+          <tr>
+            <td>🐶 <strong>PetApp2_shelly</strong></td>
+            <td>犬デモ版</td>
+            <td>シェルティ犬「Shelly」のデモ。</td>
+            <td><a href="https://github.com/usakowhity/PetApp2_shelly/releases/latest">Download</a></td>
+          </tr>
+          <tr>
+            <td>🐱 <strong>PetApp2_mimi</strong></td>
+            <td>猫デモ版</td>
+            <td>シャム猫「Mimi」のデモ。</td>
+            <td><a href="https://github.com/usakowhity/PetApp2_mimi/releases/latest">Download</a></td>
+          </tr>
+          <tr>
+            <td>🐰 <strong>PetApp2-peter</strong></td>
+            <td>うさぎデモ版</td>
+            <td>ネザーランドドワーフ「Peter」のデモ。</td>
+            <td><a href="https://github.com/usakowhity/PetApp2-peter/releases/latest">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </section>
 
   <section id="features">
@@ -138,7 +151,7 @@
     <h2>動作環境</h2>
     <ul>
       <li>Windows 10 / Windows 11</li>
-      <li>GPU不要</li>
+      <li>外部GPU不要（CPU内蔵GPUで動作）</li>
     </ul>
   </section>
 
