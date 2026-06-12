@@ -1,0 +1,21 @@
+# === Core dependencies ===
+numpy
+pygame
+PySide6
+opencv-python
+sounddevice
+tqdm
+requests
+
+# === Whisper (CPU版) ===
+whisper
+
+# === Audio / Speech ===
+pyaudio
+scipy
+
+# === Video / Media ===
+ffmpeg-python
+
+# === Optional utilities ===
+pillow
